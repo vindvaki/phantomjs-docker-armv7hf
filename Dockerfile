@@ -1,5 +1,5 @@
 # https://resin.io/blog/building-arm-containers-on-any-x86-machine-even-dockerhub/
-FROM resin/armv7hf-debian-quemu
+FROM resin/armv7hf-debian-qemu
 
 RUN ["cross-build-start"]
 
