@@ -5,7 +5,8 @@ RUN ["cross-build-start"]
 
 # http://phantomjs.org/build.html
 
-RUN sudo apt-get install build-essential g++ flex bison gperf ruby perl \
+RUN sudo apt-get update && sudo apt-get install -y \
+      build-essential g++ flex bison gperf ruby perl \
       libsqlite3-dev libfontconfig1-dev libicu-dev libfreetype6 libssl-dev \
       libpng-dev libjpeg-dev python libx11-dev libxext-dev
 
