@@ -15,6 +15,6 @@ RUN git clone git://github.com/ariya/phantomjs.git && \
       git submodule init && \
       git submodule update
 
-RUN build.py
+RUN python build.py
 
 RUN ["cross-build-end"]
